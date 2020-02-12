@@ -1,0 +1,11 @@
+3. component vs directive
+- componenet has life cycle hook managed by angular.
+- one component per DOM , but it can have many directive per DOM
+- Componenet is used to break down application into smaller component , Directive is use to design reuasble component
+- component has view but directive does not.
+
+4.ngOnInit vs contructor
+- OnInit is automatically called when all components are initialized , but contructor require
+  a declaration to be called. ngOnInit is called right after constructor .
+
+
