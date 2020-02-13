@@ -1,0 +1,20 @@
+
+<span class="header">Search Title</span>
+<span ><input class="textInput"[(ngModel)]="keyword" (ngModelChange)="getDataByTitle()"></span>
+<table >
+  <tr>
+    <th>userId</th>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+  </tr>
+
+
+  <tr *ngFor="let data of showData">
+    <td>{{data.userId}}</td>
+    <td>{{data.id}}</td>
+    <td>{{data.title}}</td>
+    <td>{{data.body}}</td>
+  </tr>
+</table>
+

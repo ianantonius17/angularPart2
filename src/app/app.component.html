@@ -1,19 +1,12 @@
-<h1 appMyDirective>1.	Create Custom Directive which does the same thing as *ngIf and use it in a program</h1>
+<button type="button" class="menu" (click)="openSearchItem()" *ngIf="page !== 'searchItem'">Search Item Assignment</button>
+<button type="button" class="menu" (click)="openHttpAssignment()" *ngIf="page !== 'httpAssignment'">HTTP Assignment</button>
+<button type="button" class="menu" (click)="openHome()" *ngIf="page !== 'home'">Back to Home</button>
 
-<div class="head">
-<span class="Title">ITEM</span>
-  <span><input type="text" class="addBox" [(ngModel)]="addItem"></span>
-<span ><button type="button" class="Add" (click)="putToList()"  (click)="clearInput()">ADD</button></span>
+<div *ngIf="page !== 'home'">
+  <div *ngIf="page ==='searchItem'">
+   <app-add-search-delete></app-add-search-delete>
+  </div>
+  <div *ngIf="page ==='httpAssignment'">
+   <app-http-assignment></app-http-assignment>
+  </div>
 </div>
-
-<div class="head">
-  <span><input type="text" class="searchText" [(ngModel)]="searchQ"></span>
-  <span><button type="button" class="searchButton" (click)="searchWith()" >SEARCH</button></span>
-</div>
-
-<ng-container *ngIf="show">
-  <ul class="display" *ngFor="let item of showItem">
-   <li (click)="remove(item)">{{item}}</li>
-
-  </ul>
-</ng-container>

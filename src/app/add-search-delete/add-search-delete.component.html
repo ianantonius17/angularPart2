@@ -1,0 +1,19 @@
+<h1 appMyDirective>1.	Create Custom Directive which does the same thing as *ngIf and use it in a program</h1>
+
+<div class="head">
+  <span class="Title">ITEM</span>
+  <span><input type="text" class="addBox" [(ngModel)]="addItem"></span>
+  <span ><button type="button" class="Add" (click)="putToList()"  (click)="clearInput()">ADD</button></span>
+</div>
+
+<div class="head">
+  <span><input type="text" class="searchText" [(ngModel)]="searchQ"></span>
+  <span><button type="button" class="searchButton" (click)="searchWith()" >SEARCH</button></span>
+</div>
+
+<ng-container *ngIf="show">
+  <ul class="display" *ngFor="let item of showItem">
+    <li (click)="remove(item)">{{item}}</li>
+
+  </ul>
+</ng-container>

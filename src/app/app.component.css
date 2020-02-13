@@ -1,46 +1,5 @@
-.Title{
-  alignment: left;
-  margin-left: 60px;
-  font-size: xx-large;
+.menu {
+  font-size: medium;
+  align-items: center;
+  margin: 7px 7px;
 }
-.Add{
-  float:right;
-  margin-right: 150px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  font-size: large;
-  width: 300px;
-
-}
-.head{
-  border: 2px solid black;
-}
-.addBox{
-  font-size: x-large;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 100px;
-  width: 800px;
-  border: 1px solid black;
-}
-.searchText{
-  font-size: large;
-  margin-left: 60px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 1300px;
-  border: 1px solid black;
-}
-.searchButton{
-  margin-right: 100px;
-  float: right;
-  font-size: large;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  width: 180px;
-}
-.display{
-  font-size: 35px;
-  margin-left: 90px;
-}
-
